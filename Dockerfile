@@ -6,5 +6,5 @@ RUN \
   
 RUN \
   apt update
-  apt-get install -y unixodbc-dev
-  apt-get install -y msodbcsql17
+  apt install -y unixodbc-dev
+  apt install -y msodbcsql17
