@@ -5,6 +5,6 @@ RUN \
   curl https://packages.microsoft.com/config/ubuntu/18.10/prod.list > /etc/apt/sources.list.d/mssql-release.list \
   
 RUN \
-  apt-get update
-  ACCEPT_EULA=Y apt-get install unixodbc-dev
-  ACCEPT_EULA=Y apt-get install msodbcsql17
+  apt update
+  apt-get install -y unixodbc-dev
+  apt-get install -y msodbcsql17
