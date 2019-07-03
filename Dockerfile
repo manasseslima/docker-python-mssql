@@ -5,4 +5,4 @@ RUN curl https://packages.microsoft.com/config/ubuntu/18.04/prod.list > /etc/apt
   
 RUN apt update
 RUN apt install -y unixodbc-dev
-RUN apt install -y msodbcsql17
+RUN apt install ACCEPT_EULA=Y -y msodbcsql17
